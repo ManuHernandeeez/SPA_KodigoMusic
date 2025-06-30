@@ -1,0 +1,32 @@
+.album-card {
+  width: 160px;
+  height: 160px;
+  border-radius: 18px;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  color: #fff;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.album-card:hover {
+  transform: scale(1.05);
+}
+
+.album-info {
+  width: 100%;
+}
+
+.album-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.album-author {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
