@@ -6,7 +6,8 @@ const MusicForm = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    // Aquí puedes manejar el envío de datos, como enviarlos a una API
+
+
   };
 
   return (

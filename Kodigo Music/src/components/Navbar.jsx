@@ -1,8 +1,10 @@
+// Componente Navbar: barra de navegación principal de la aplicación.
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
   return (
+    // Estructura de la barra de navegación con enlaces a las rutas principales.
     <nav className="navbar">
       <div className="navbar-brand">
         <h1>Kodigo Music</h1>

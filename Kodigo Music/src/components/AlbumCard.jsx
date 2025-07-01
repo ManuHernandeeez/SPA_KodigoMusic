@@ -1,8 +1,10 @@
+// Componente AlbumCard: representa visualmente un álbum individual.
 import React from "react";
 import "./AlbumCard.css";
 
 function AlbumCard({ title, author, gradient }) {
   return (
+    // Tarjeta con información del album
     <div
       className="album-card"
       style={{

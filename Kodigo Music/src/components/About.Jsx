@@ -2,16 +2,11 @@ import React from 'react';
 
 function About() {
   return (
+    // Contenedor para informacion personal y descripcion de la aplicacion
     <div className="about">
-      <h1>About Kodigo Music</h1>
+      <h1>Acerca de Kodigo Music</h1>
       <p>
-        Kodigo Music is a single-page application designed to provide users with an engaging and interactive experience related to music. Our goal is to create a platform where users can explore various music-related features, including playlists, music information, and more.
-      </p>
-      <p>
-        This application is built using ReactJS and utilizes modern web technologies to ensure a responsive and user-friendly design. We aim to deliver a seamless experience across all devices.
-      </p>
-      <p>
-        Thank you for using Kodigo Music! We hope you enjoy your time here.
+        Kodigo Music es una aplicación web de una sola página (SPA) inspirada en las principales plataformas de música digital. Permite explorar álbumes, ver detalles de canciones y agregar nueva música de forma sencilla y atractiva. Está desarrollada con ReactJS y cuenta con un diseño moderno y responsive para brindar la mejor experiencia al usuario.
       </p>
     </div>
   );

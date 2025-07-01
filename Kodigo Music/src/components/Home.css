@@ -38,3 +38,72 @@
     padding: 0.5rem !important;
   }
 }
+
+.album-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #181818ee;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.album-modal-content {
+  background: #232323;
+  color: #fff;
+  border-radius: 24px;
+  max-width: 700px;
+  width: 95vw;
+  padding: 2rem 2rem 2.5rem 2rem;
+  box-shadow: 0 8px 40px #000a;
+  position: relative;
+  margin: 2rem 0;
+  animation: modalIn 0.2s;
+}
+
+@keyframes modalIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.album-modal-close {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: #646cff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #0004;
+  transition: background 0.2s;
+}
+.album-modal-close:hover {
+  background: #232323;
+}
+
+.album-modal-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .album-modal-content {
+    padding: 1rem 0.5rem 1.5rem 0.5rem;
+  }
+  .album-modal-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+}
