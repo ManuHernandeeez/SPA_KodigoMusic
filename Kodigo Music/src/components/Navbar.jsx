@@ -24,6 +24,10 @@ function Navbar() {
         <li>
           <Link to="/favorites">Me gusta</Link>
         </li>
+        <li>
+          <Link to="/player">Reproducir</Link>
+        </li>
+
          <li>
           <Link to="/about">Acerca de</Link>
         </li>
