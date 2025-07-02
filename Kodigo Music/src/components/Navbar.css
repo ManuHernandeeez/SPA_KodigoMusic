@@ -73,6 +73,39 @@
     width: 100%;
   }
 }
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-logout {
+  margin-left: 2rem;
+}
+
+.logout-btn {
+  background: #ff4e50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.logout-btn:hover {
+  background: #d7263d;
+}
+
 
 /* Opcional: para pantallas muy pequeñas */
 @media (max-width: 500px) {
