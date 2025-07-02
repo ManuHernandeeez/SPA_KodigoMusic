@@ -1,12 +1,33 @@
-# React + Vite
+# Kodigo Music 🎵
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kodigo Music es una SPA inspirada en plataformas como Spotify y Apple Music, desarrollada con ReactJS y Vite. Utiliza Firebase para autenticación y almacenamiento de usuarios.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Producción
+- [Enlace a la app](https://kodigomusic01.netlify.app/)
+- [Repositorio público](https://github.com/ManuHernandeeez/SPA_KodigoMusic.git)
 
-## Expanding the ESLint configuration
+## Características principales
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Diseño atractivo y responsive:** Interfaz moderna y adaptable a cualquier dispositivo.
+- **Desarrollada con ReactJS:** Uso de componentes reutilizables, manejo de estados y rutas.
+- **Ruteo con React Router:** Navegación fluida entre diferentes vistas de la aplicación.
+- **Formulario validado:** Incluye al menos un formulario validado usando `react-hook-form`.
+- **Autenticación con Firebase:** Registro y login de usuarios, con almacenamiento seguro en Firebase.
+- **Despliegue en producción:** Aplicación alojada en un entorno de hosting gratuito.
+
+## Tecnologías utilizadas
+
+- [ReactJS]
+- [React Router DOM]
+- [React Hook Form]
+- [Firebase Authentication]
+- [Vite] para el entorno de desarrollo y build
+- [SweetAlert2] para notificaciones de error en inicio de sesion e inicio de sesion exitoso
+
+## Estructura del proyecto
+
+- **components/**: Componentes reutilizables de React (Navbar, Footer, Home, Login, etc).
+- **firebase/**: Configuración y utilidades para la integración con Firebase.
+- **assets/** e **img/**: Recursos estáticos e imágenes.
+- **App.jsx**: Componente principal que define las rutas de la SPA.

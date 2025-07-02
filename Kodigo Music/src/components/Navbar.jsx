@@ -28,7 +28,7 @@ function Navbar() {
           <Link to="/player">Reproducir</Link>
         </li>
 
-         <li>
+        <li>
           <Link to="/about">Acerca de</Link>
         </li>
         <li>

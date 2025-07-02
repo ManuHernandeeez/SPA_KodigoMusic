@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import Favorites from "./components/Favorites"; 
+import Favorites from "./components/Favorites";
 import Player from "./components/Player";
 
 
@@ -19,7 +19,6 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/about" element={<About />} />
         <Route path="/player" element={<Player />} />
-
         <Route path="/music-form" element={<MusicForm />} />
         <Route path="/album/:id" element={<AlbumDetail />} />
         <Route path="/login" element={<Login />} />

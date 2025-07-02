@@ -9,10 +9,10 @@
   padding: 1rem 2rem;
   border-radius: 16px;
   margin-bottom: 2rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
   width: 100%;
   min-height: 64px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .navbar-brand h1 {
@@ -78,16 +78,20 @@
     padding: 0.7rem 0.5rem;
     border-radius: 0 0 16px 16px;
   }
+
   .navbar-brand h1 {
     font-size: 1.2rem;
   }
+
   .navbar-links {
     gap: 0.7rem;
   }
+
   .navbar-links a {
     font-size: 1rem;
     padding: 0.4rem 0.7rem;
   }
+
   .navbar-logout {
     margin-left: 0.7rem;
   }
@@ -97,13 +101,16 @@
   .navbar {
     padding: 0.3rem 0.2rem;
   }
+
   .navbar-links {
     gap: 0.3rem;
   }
+
   .navbar-links a {
     font-size: 0.95rem;
     padding: 0.3rem 0.5rem;
   }
+
   .navbar-logout {
     margin-left: 0.3rem;
   }

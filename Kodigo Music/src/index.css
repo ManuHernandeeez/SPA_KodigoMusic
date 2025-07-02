@@ -16,6 +16,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -27,7 +28,7 @@ body {
   background: #242424;
   display: flex;
   flex-direction: column;
-  height: 100vh; 
+  height: 100vh;
 }
 
 #root {
@@ -53,7 +54,11 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0.5em 0 0.3em 0;
   word-break: break-word;
 }
@@ -64,11 +69,13 @@ table {
   font-size: 1rem;
 }
 
-th, td {
+th,
+td {
   padding: 0.5rem;
   text-align: left;
   word-break: break-word;
 }
+
 @media (max-width: 600px) {
   table {
     display: block;
@@ -76,15 +83,23 @@ th, td {
     overflow-x: auto;
     font-size: 0.92rem;
   }
-  thead, tbody, tr, th, td {
+
+  thead,
+  tbody,
+  tr,
+  th,
+  td {
     display: table-row-group;
     width: auto;
   }
-  th, td {
+
+  th,
+  td {
     padding: 0.4rem;
     min-width: 90px;
     white-space: nowrap;
   }
+
   td:before {
     display: none;
     content: "";

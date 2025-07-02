@@ -1,5 +1,5 @@
 import React from "react";
-import portadaImg from '../img/1.jpg'; 
+import portadaImg from '../img/1.jpg';
 function Player() {
   return (
     <div

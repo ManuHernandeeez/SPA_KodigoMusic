@@ -1,4 +1,4 @@
-// Componente AlbumCard: representa visualmente un álbum individual.
+//representa visualmente un álbum individual.
 import React from "react";
 import "./AlbumCard.css";
 

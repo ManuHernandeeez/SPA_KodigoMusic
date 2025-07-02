@@ -27,7 +27,7 @@ function About() {
     <div className="about" style={aboutStyle}>
       <h1 style={headingStyle}>Acerca de Kodigo Music</h1>
       <p style={paragraphStyle}>
-        Kodigo Music es una aplicación web de una sola página inspirada en las principales plataformas de música digital. Permite explorar álbumes y ver detalles de canciones de forma sencilla y atractiva. 
+        Kodigo Music es una aplicación web de una sola página inspirada en las principales plataformas de música digital. Permite explorar álbumes y ver detalles de canciones de forma sencilla y atractiva.
       </p>
     </div>
   );

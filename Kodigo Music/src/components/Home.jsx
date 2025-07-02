@@ -1,4 +1,3 @@
-// Este componente representa la página principal de la aplicación, mostrando álbumes destacados, tablas de canciones y carruseles de álbumes.
 import React, { useState } from "react";
 import AlbumCarousel from "./AlbumCarousel";
 import "./AlbumCard.css";
@@ -50,7 +49,7 @@ const featuredAlbums = [
     },
 ];
 
-// Exportamos listas completas de canciones para cada álbum.
+// Exportamos listas  de canciones para cada álbum.
 export const fullAlbumSongs = [
     [
         { number: 1, title: "Strangers by Nature", album: "30", year: 2021, duration: "3:02" },
@@ -97,7 +96,7 @@ export const fullAlbumSongs = [
     ],
 ];
 
-// Listas de álbumes para los carruseles (simulan diferentes categorías).
+// Listas de álbumes para los carruseles
 const albums1 = [
     { title: "Thriller", author: "Michael Jackson", gradient: "linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%)" },
     { title: "Back in Black", author: "AC/DC", gradient: "linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)" },
@@ -143,14 +142,13 @@ const albums3 = [
 ];
 
 function Home() {
-    // Estado para controlar qué álbum está expandido (mostrando detalles).
+    // Hook para controlar qué álbum está expandido
     const [openAlbum, setOpenAlbum] = useState(null);
-    // Hook para navegar entre rutas.
     const navigate = useNavigate();
 
     return (
         <div>
-            {/* Sección de álbumes destacados, con animación de expansión al hacer clic */}
+            {/* Sección de álbumes destacados*/}
             <div className="featured-albums">
                 {featuredAlbums.map((album, idx) => (
                     <div
@@ -190,7 +188,7 @@ function Home() {
                         <div style={{ textAlign: openAlbum === idx ? "left" : "center" }}>
                             <h3 className="album-title">{album.title}</h3>
                             <p className="album-author">{album.author}</p>
-                            {/* Si el álbum está expandido, mostramos más detalles y el botón para ver más canciones */}
+                            {/* Si el álbum está expandido, mostramos más detalles*/}
                             {openAlbum === idx && (
                                 <>
                                     <p style={{ margin: "0.5rem 0" }}>

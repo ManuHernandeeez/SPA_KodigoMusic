@@ -8,11 +8,16 @@ import Swal from 'sweetalert2'
 
 
 function Register() {
+  // guarda el email del usuario
   const [email, setEmail] = useState("");
+  // guarda la contraseña
   const [password, setPassword] = useState("");
+  // mensajes de error
   const [error, setError] = useState("");
+  //mensajes de éxito
   const [success, setSuccess] = useState("");
 
+  //gestion del registro de usuario
   const handleRegister = async (e) => {
     e.preventDefault();
     setError("");

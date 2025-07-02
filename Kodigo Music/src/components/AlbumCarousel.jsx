@@ -1,4 +1,3 @@
-// Componente AlbumCarousel: muestra un carrusel horizontal de álbumes.
 import React, { useRef } from "react";
 import AlbumCard from "./AlbumCard";
 import "./AlbumCarousel.css";
@@ -9,7 +8,6 @@ function AlbumCarousel({ title, albums }) {
   let startX;
   let scrollLeft;
 
-  // Drag-scroll handlers
   const handleMouseDown = (e) => {
     isDown = true;
     carouselRef.current.classList.add('dragging');
@@ -35,7 +33,6 @@ function AlbumCarousel({ title, albums }) {
     carouselRef.current.scrollLeft = scrollLeft - walk;
   };
 
-  // Touch events para móviles
   const handleTouchStart = (e) => {
     isDown = true;
     startX = e.touches[0].pageX - carouselRef.current.offsetLeft;
