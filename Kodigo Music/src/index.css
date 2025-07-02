@@ -27,11 +27,11 @@ body {
   background: #242424;
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Asegura que el body ocupe toda la altura */
+  height: 100vh; 
 }
 
 #root {
-  flex: 1 0 auto; /* Permite que el contenido crezca y empuje el footer hacia abajo */
+  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100vh;

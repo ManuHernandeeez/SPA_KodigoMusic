@@ -7,8 +7,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Login from "./components/Login";
 import Register from "./components/Register";
-
-
+import Favorites from "./components/Favorites"; 
 
 function App() {
   return (
@@ -22,6 +21,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/favorites" element={<Favorites />} /> {/* Nueva ruta */}
       </Routes>
       <Footer />
     </Router>

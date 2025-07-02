@@ -1,6 +1,5 @@
 import React from "react";
 
-// Ejemplo de canciones favoritas (puedes reemplazar por props o estado global)
 const favoriteSongs = [
   {
     title: "Easy on Me",
@@ -39,7 +38,7 @@ function Favorites() {
       }}
     >
       <h2 style={{ textAlign: "center", marginBottom: "2rem", letterSpacing: 1 }}>
-        <span role="img" aria-label="heart">💜</span> Tus Canciones Favoritas
+        <span role="img" aria-label="heart"></span> Tus Canciones Favoritas
       </h2>
       <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
         {favoriteSongs.map((song, idx) => (
