@@ -1,5 +1,5 @@
 import React from "react";
-
+import portadaImg from '../img/1.jpg'; 
 function Player() {
   return (
     <div
@@ -21,7 +21,7 @@ function Player() {
       }}
     >
       <img
-        src="/src/img/1.jpg"
+        src={portadaImg}
         alt="Portada"
         style={{
           width: "60vw",

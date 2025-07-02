@@ -243,11 +243,11 @@ function Home() {
                         <tbody>
                             {featuredAlbums[openAlbum].songs.map((song, i) => (
                                 <tr key={i} style={{ borderBottom: "1px solid #333" }}>
-                                    <td style={{ padding: "0.5rem", textAlign: "center" }}>{song.number}</td>
-                                    <td style={{ padding: "0.5rem" }}>{song.title}</td>
-                                    <td style={{ padding: "0.5rem" }}>{song.album}</td>
-                                    <td style={{ padding: "0.5rem", textAlign: "center" }}>{song.year}</td>
-                                    <td style={{ padding: "0.5rem", textAlign: "center" }}>{song.duration}</td>
+                                    <td data-label="#"> {song.number} </td>
+                                    <td data-label="Título"> {song.title} </td>
+                                    <td data-label="Álbum"> {song.album} </td>
+                                    <td data-label="Año"> {song.year} </td>
+                                    <td data-label="Duración"> {song.duration} </td>
                                 </tr>
                             ))}
                         </tbody>

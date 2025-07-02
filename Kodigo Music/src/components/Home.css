@@ -163,3 +163,41 @@
     margin-bottom: 10px !important;
   }
 }
+
+@media (max-width: 600px) {
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    background: none;
+  }
+  thead {
+    display: none;
+  }
+  tbody, tr, td {
+    display: block;
+    width: 100%;
+  }
+  tr {
+    margin-bottom: 1.2rem;
+    background: #232323;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0002;
+    padding: 0.5rem 0.7rem;
+  }
+  td {
+    text-align: left !important;
+    padding: 0.3rem 0.2rem !important;
+    font-size: 1rem;
+    border: none;
+    position: relative;
+  }
+  td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #43e97b;
+    display: inline-block;
+    width: 120px;
+    min-width: 90px;
+  }
+}
