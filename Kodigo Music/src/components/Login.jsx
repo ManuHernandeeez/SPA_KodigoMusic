@@ -3,6 +3,8 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase/appConfig";
 import { useNavigate, Link } from "react-router-dom";
 import "./AuthForm.css";
+import Swal from "sweetalert2";
+
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -16,9 +18,21 @@ function Login() {
     setError("");
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate("/home");
+      Swal.fire({
+        title: "Sesion iniciada!",
+        icon: "success",
+        draggable: true
+      }).then(() => {
+        navigate("/home");
+      });
     } catch (err) {
       setError("Correo o contraseña incorrectos");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Correo o contraseña incorrectos",
+        footer: '<a href="#">¿Olvidaste tu contraseña?</a>'
+      });
     }
   };
 

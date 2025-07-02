@@ -6,7 +6,7 @@ function About() {
     <div className="about">
       <h1>Acerca de Kodigo Music</h1>
       <p>
-        Kodigo Music es una aplicación web de una sola página (SPA) inspirada en las principales plataformas de música digital. Permite explorar álbumes, ver detalles de canciones y agregar nueva música de forma sencilla y atractiva. Está desarrollada con ReactJS y cuenta con un diseño moderno y responsive para brindar la mejor experiencia al usuario.
+        Kodigo Music es una aplicación web de una sola página inspirada en las principales plataformas de música digital. Permite explorar álbumes y ver detalles de canciones de forma sencilla y atractiva. 
       </p>
     </div>
   );

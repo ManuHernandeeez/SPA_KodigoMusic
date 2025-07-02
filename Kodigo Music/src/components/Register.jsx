@@ -4,6 +4,9 @@ import { auth } from "../firebase/appConfig";
 import { Link } from "react-router-dom";
 import "./AuthForm.css";
 
+import Swal from 'sweetalert2'
+
+
 function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
