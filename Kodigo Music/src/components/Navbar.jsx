@@ -21,10 +21,6 @@ function Navbar() {
         <li>
           <Link to="/home">Inicio</Link>
         </li>
-       
-        <li>
-          <Link to="/library">Librería</Link>
-        </li>
         <li>
           <Link to="/favorites">Me gusta</Link>
         </li>

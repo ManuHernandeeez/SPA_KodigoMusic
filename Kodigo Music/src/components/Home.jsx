@@ -155,9 +155,10 @@ function Home() {
                 {featuredAlbums.map((album, idx) => (
                     <div
                         key={idx}
-                        className="album-card"
+                        className={`album-card${openAlbum === idx ? " expanded" : ""}`}
                         style={{
                             background: album.gradient,
+                            maxWidth: "98vw",
                             width: openAlbum === idx ? 380 : 180,
                             height: openAlbum === idx ? 260 : 180,
                             position: "relative",
@@ -168,6 +169,7 @@ function Home() {
                             cursor: "pointer",
                             transition: "all 0.3s cubic-bezier(.4,2,.6,1)",
                             zIndex: openAlbum === idx ? 10 : 1,
+                            padding: openAlbum === idx ? "1.2rem" : "1rem"
                         }}
                         onClick={() => setOpenAlbum(openAlbum === idx ? null : idx)}
                     >
