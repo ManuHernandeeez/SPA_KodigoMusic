@@ -12,6 +12,7 @@
   box-shadow: 0 2px 12px rgba(0,0,0,0.12);
   width: 100%;
   min-height: 64px;
+  flex-wrap: wrap; 
 }
 
 .navbar-brand h1 {
@@ -19,6 +20,7 @@
   font-size: 1.7rem;
   margin: 0;
   letter-spacing: 2px;
+  white-space: nowrap;
 }
 
 .navbar-links {
@@ -28,6 +30,7 @@
   margin: 0;
   padding: 0;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .navbar-links li {
@@ -42,49 +45,13 @@
   padding: 0.5rem 1rem;
   border-radius: 8px;
   transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
 }
 
 .navbar-links a:hover,
 .navbar-links a.active {
   background: #646cff;
   color: #fff;
-}
-
-/* Responsive: menú hamburguesa */
-@media (max-width: 800px) {
-  .navbar {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 1rem;
-    border-radius: 0 0 16px 16px;
-  }
-  .navbar-brand {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .navbar-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    background: #232323;
-    border-radius: 12px;
-    margin-top: 1rem;
-    padding: 1rem 0;
-    width: 100%;
-  }
-}
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar-links {
-  display: flex;
-  gap: 1.2rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .navbar-logout {
@@ -106,17 +73,38 @@
   background: #d7263d;
 }
 
-
-/* Opcional: para pantallas muy pequeñas */
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .navbar {
-    padding: 0.5rem;
+    padding: 0.7rem 0.5rem;
+    border-radius: 0 0 16px 16px;
   }
   .navbar-brand h1 {
     font-size: 1.2rem;
   }
+  .navbar-links {
+    gap: 0.7rem;
+  }
   .navbar-links a {
     font-size: 1rem;
-    padding: 0.5rem 0.7rem;
+    padding: 0.4rem 0.7rem;
+  }
+  .navbar-logout {
+    margin-left: 0.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding: 0.3rem 0.2rem;
+  }
+  .navbar-links {
+    gap: 0.3rem;
+  }
+  .navbar-links a {
+    font-size: 0.95rem;
+    padding: 0.3rem 0.5rem;
+  }
+  .navbar-logout {
+    margin-left: 0.3rem;
   }
 }
